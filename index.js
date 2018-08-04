@@ -70,6 +70,7 @@ class Meal {
   customers() {
     return this.deliveries().map(delivery => delivery.customer());
   }
+}
 
 class Customer {
   constructor(name, neighborhoodId) {
