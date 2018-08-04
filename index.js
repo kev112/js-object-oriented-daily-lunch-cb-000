@@ -63,7 +63,7 @@ class Meal {
     store.meals.push(this);
   }
 
-  
+
 }
 
 class Customer {
@@ -77,6 +77,12 @@ class Customer {
   deliveries() {
     return store.deliveries.filter(function (delivery) {
       return delivery.customerId == this.id
+    }.bind(this))
+  }
+
+  meals() {
+    return store.meals.filter(function (meal) {
+      return meal.customerId == this.id
     }.bind(this))
   }
 }
