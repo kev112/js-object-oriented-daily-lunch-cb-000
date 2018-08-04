@@ -16,14 +16,14 @@ class deliveries {
   }
 
   meal() {
-    return store.meals.filter(function () {
-      return this.mealId == meal.id 
+    return store.meals.filter(function (meal) {
+      return this.mealId == meal.id
     })
-    
+
   }
 
   customer() {
-    return store.customers.filter(function () {
+    return store.customers.filter(function (customer) {
       return this.customerId == customer.id
     })
   }
