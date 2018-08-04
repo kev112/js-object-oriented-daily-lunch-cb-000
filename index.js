@@ -62,8 +62,6 @@ class Meal {
     this.id = ++mealId;
     store.meals.push(this);
   }
-
-
 }
 
 class Customer {
