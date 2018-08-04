@@ -47,6 +47,10 @@ class Neighborhood {
       return delivery.neighborhoodId == this.id
     }.bind(this))
   }
+
+  customers() {
+
+  }
 }
 
 class Meal {
