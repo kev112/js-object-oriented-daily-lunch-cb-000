@@ -64,7 +64,7 @@ class Meal {
   }
 
   customers() {
-    const allCustomers = this.deliveries().map(delivery => delivery.customer());
+    return this.deliveries().map(delivery => delivery.customer());
   }
 
 class Customer {
