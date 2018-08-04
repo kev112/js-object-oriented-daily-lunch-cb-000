@@ -16,15 +16,20 @@ class deliveries {
   }
 
   meal() {
+    return store.meals.filter(function () {
+      return this.mealId == meal.id 
+    })
     
   }
 
   customer() {
-    
+    return store.customers.filter(function () {
+      return this.customerId == customer.id
+    })
   }
 
   neighborhood() {
-    
+
   }
 }
 
@@ -36,7 +41,7 @@ class Neighborhood {
   }
 
   deliveries() {
-    
+
   }
 }
 
