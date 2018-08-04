@@ -43,7 +43,9 @@ class Neighborhood {
   }
 
   deliveries() {
-
+    return store.deliveries.filter(function (delivery) {
+      
+    }.bind(this))
   }
 }
 
