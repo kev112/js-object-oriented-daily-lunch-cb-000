@@ -18,14 +18,14 @@ class deliveries {
   meal() {
     return store.meals.filter(function (meal) {
       return this.mealId == meal.id
-    })
+    }.bind(this))
 
   }
 
   customer() {
     return store.customers.filter(function (customer) {
       return this.customerId == customer.id
-    })
+    }.bind(this))
   }
 
   neighborhood() {
