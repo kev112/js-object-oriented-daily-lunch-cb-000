@@ -49,7 +49,9 @@ class Neighborhood {
   }
 
   customers() {
-
+    return store.customers.filter(function (customer) {
+      return delivery.customerId == this.id
+    }.bind(this))
   }
 }
 
