@@ -63,8 +63,9 @@ class Meal {
     store.meals.push(this);
   }
 
-
-}
+  customers() {
+    const allCustomers = this.deliveries().map(delivery => delivery.customer());
+  }
 
 class Customer {
   constructor(name, neighborhoodId) {
@@ -82,7 +83,7 @@ class Customer {
 
   meals() {
     return store.meals.filter(function (meal) {
-      return meal.customerId == this.id
+      return meal.id ==
     }.bind(this))
   }
 }
