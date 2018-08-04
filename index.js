@@ -62,6 +62,8 @@ class Meal {
     this.id = ++mealId;
     store.meals.push(this);
   }
+
+  
 }
 
 class Customer {
@@ -70,5 +72,11 @@ class Customer {
     this.neighborhoodId = neighborhoodId
     this.id = ++customerId;
     store.customers.push(this);
+  }
+
+  deliveries() {
+    return store.deliveries.filter(function (delivery) {
+      return delivery.customerId == this.id
+    }.bind(this))
   }
 }
