@@ -50,7 +50,7 @@ class Neighborhood {
 
   customers() {
     return store.customers.filter(function (customer) {
-      return delivery.customerId == this.id
+      return customer.neighborhoodId == this.id
     }.bind(this))
   }
 }
