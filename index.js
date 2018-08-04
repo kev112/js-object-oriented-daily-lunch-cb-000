@@ -29,7 +29,9 @@ class deliveries {
   }
 
   neighborhood() {
-
+    return store.neighborhoods.filter(function (neighborhood) {
+      return eighborhood.id == this.neighborhoodId
+    }.bind(this))
   }
 }
 
